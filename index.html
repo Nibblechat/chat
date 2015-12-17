@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Nibble Chat - Login</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/clientjs/nibblechatglobalsettings.js"></script>
+    <script src="/clientjs/nibblechatutilities.js"></script>       
+    <script src="/clientjs/nibblechatclientloginops.js"></script>
+ 
+</head>
+
+<body>
+     <form name="chatLogin" id="chatLogin" method="post" action="/nibblechat.html" onSubmit="javascript:loginUsr();">
+      Name : <input type="text" name="usrName" id="usrName" value="" length="10"/>
+      <input type="submit" name="usLoggedin" id="usrLoggedin" value="Sign In"/>
+     </form>
+</body>
+
+</html>

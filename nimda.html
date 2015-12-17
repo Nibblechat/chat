@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Nibble Chat - Admin</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/clientjs/nibblechatglobalsettings.js"></script>     
+ 
+</head>
+
+<body>
+
+    <div id="welcomeAdmMsg"> </div>
+
+    <div id="chatArea"> </div>
+    
+    <div id="sendDiv">
+     <form name="admForm" id="admForm">
+      <input type="hidden" name="usrAdmName" id="usrAdmName" value="" />
+      <input type="hidden" name="pageType" id="pageType" value="admin" length="10"/>
+     
+      Message : <textarea name="msgTxt" id="msgTxt" rows="2" cols="50"></textarea> <br/>
+      <input type="button" name="sendAdmMsg" id="sendAdmMsg" value="Broadcast" onClick="javascript:broadcastMsg();"/>
+      <input type="button" name="admPvtMsg" id="admPvtMsg" value="Send message to User" onClick="javascript:sendAdmPvtMsg();"/>
+       <input type="button" name="usrAdmLoggedOut" id="usrAdmLoggedOut" value="Logout" onClick="javascript:logoutAdmUsr();"/>
+     </form>
+    </div>
+
+    <br/></br>
+    NEWS:<br/>
+    <div id="serverMsg"></div>  
+    <br/><br/>
+    User :
+    <br/>
+    <div id="usersList"><select id="users" name="users" size="5"></select></div>
+    <input type="button" name="forcedLoggedOut" id="forcedLoggedOut" value="Forced Logout" onClick="javascript:forcedLoggedOut();"/>
+   <script type="text/javascript">
+
+   </script>
+    <script src="/clientjs/nibblechatcommon.js"></script>
+    <script src="/clientjs/nibblechatutilities.js"></script>   
+    <script src="/clientjs/nibblechatadminops.js"></script>
+</body>
+
+</html>

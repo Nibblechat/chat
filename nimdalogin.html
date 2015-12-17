@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Nibble Chat - Admin Login</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/clientjs/nibblechatglobalsettings.js"></script>
+    <script src="/clientjs/nibblechatutilities.js"></script>       
+    <script src="/clientjs/nibblechatadminloginops.js"></script>
+ 
+</head>
+
+<body>
+     <form name="adminLogin" id="adminLogin" method="post" action="/nimda.html" onSubmit="javascript:loginAdmUsr();">
+      Name : <input type="text" name="usrAdmName" id="usrAdmName" value="" length="10"/>
+      <input type="submit" name="usrAdmLoggedin" id="usrAdmLoggedin" value="Sign In"/>
+      <input type="button" name="usrAdmLoggedOut" id="usrAdmLoggedOut" value="Logout" disabled="true" onClick="javascript:logoutAdmUsr();"/>
+     </form>
+</body>
+
+</html>
