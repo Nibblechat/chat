@@ -41,7 +41,7 @@ body{
 
 #footer {
     clear: both;
-    background: #3c8dbc;
+    background: #0D1B21;
     padding: 15px;
     color: #fff;
     font-size: 14px;
@@ -444,7 +444,7 @@ body{
 .user-label {
 	background: #1a2226;
 	padding:15px;
-	color:#4b646f;
+	color:#9EB8C3;
 }
 
 .usersList {
@@ -474,7 +474,10 @@ option {
 
 #secondary {
 	width: 20%;
-	padding-top: 18px;
+}
+
+#secondary .box {
+	margin-left: 0;
 }
 
 .box {
@@ -497,6 +500,14 @@ option {
 	margin-right: 10px;
     position: relative;
     top: 6px;
+}
+
+.new-label {
+	padding: 3px 0;
+    border-bottom: 2px solid #3c8dbc;
+    margin-bottom: 15px;
+    color: #2D739C;
+    font-weight: bold;
 }
 
 #msgTxt {
