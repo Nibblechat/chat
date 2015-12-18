@@ -1,0 +1,469 @@
+body{
+  /*background-color: lightyellow;*/
+  font-family: 'Open Sans', sans-serif;  
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #ecf0f5;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/* container */
+/*#container {
+  
+}
+*/
+#primary {
+    float: left;
+}
+
+#content {
+    float: left;
+    position: relative;
+}
+
+#secondary {
+    float: left;
+}
+
+#footer {
+    clear: both;
+    background: #3c8dbc;
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+    font-size:small;
+	margin: 10px;
+  display: inline-block;
+  position: relative;
+	width: auto;
+	height: auto;
+	background-color: lightblue;
+}
+
+.talk-bubbleSelf {
+    font-size:small;
+	margin: 10px;
+  display: inline-block;
+  position: relative;
+	width: auto;
+	height: auto;
+	background-color: lightpink;
+}
+
+.talk-bubblelogout {
+    font-size:small;
+	margin: 10px;
+  display: inline-block;
+  position: relative;
+	width: auto;
+	height: auto;
+	background-color: lightgrey;
+}
+
+.talk-bubblelogin {
+    font-size:small;
+	margin: 10px;
+  display: inline-block;
+  position: relative;
+	width: auto;
+	height: auto;
+	background-color: lightgreen;
+}
+
+.border{
+  border: 2px solid #666;
+}
+.round{
+  border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+
+}
+
+/* Right triangle placed top left flush. */
+.tri-right.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 0px;
+	bottom: auto;
+	border: 22px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+/* Right triangle, left side slightly down */
+.tri-right.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -8px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+}
+.tri-right.btm-left:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 22px solid;
+	border-color: transparent transparent transparent lightblue;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 38px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent lightyellow;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 30px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 38px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+/*
+	left: -8px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+	left: 0px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 22px solid;
+	border-color: transparent transparent transparent lightyellow;
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -8px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 0px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightblue transparent transparent;
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 5px;
+  top: 48px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightpink transparent transparent lightpink;
+}
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 0px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+/* talk bubble contents */
+.talktext{
+  padding: 0.5em;
+  text-align: left;
+  line-height: 1em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+.dtshadow {
+  text-shadow: 0.5px 1px 1.5px rgba(0,0,0,0.3);
+}
+
+.dt {
+  /* basic font seting */
+  font:  1em helvetica, sans-serif;
+  font-size:xx-small;
+  text-align: right;
+  letter-spacing: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.nameshadow {
+  text-shadow: 0.5px 1px 1.5px rgba(0,0,0,0.3);
+}
+
+.name {
+  /* basic font seting */
+  font:  bold 1.5em helvetica, sans-serif;
+  font-size:x-small;
+  text-align: right;
+  letter-spacing: 1px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* Custom Style */
+#header {
+	width: 100%;
+	height: 50px;
+	background: #3c8dbc;
+}
+
+#welcomeMsg {
+	color:#fff;
+	float: left;
+}
+
+.left-sidebar {
+	float: left;
+	width: 20%;
+	background: #222d32;
+}
+
+.user-label {
+	background: #1a2226;
+	padding:15px;
+	color:#4b646f;
+}
+
+.usersList {
+	padding:15px;
+}
+
+#usersList select {
+	border: none;
+    background-color: transparent;
+    width: 100%;
+    color: #b8c7ce;
+    padding: 15px; 
+    text-transform: capitalize;
+}
+
+option {
+	background: url('../img/user-circle.jpg') no-repeat left 2px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+} 
+
+#content {
+	width: 60%;
+	background-color: #ecf0f5;
+}
+
+#secondary {
+	width: 20%;
+}
+
+.box {
+	background: #ffffff none repeat scroll 0 0;
+    border-radius: 3px;
+    border-top: 3px solid #d2d6de;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    position: relative;
+    padding: 10px;
+}
+#sendDiv {
+	clear: both;
+	height: 65px;
+}
+
+#sendDiv label {
+	vertical-align: top;
+	float: left;
+	margin-right: 10px;
+    position: relative;
+    top: 6px;
+}
+
+#msgTxt {
+	padding: 10px;
+	float: left;
+	margin: 0;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: 1px solid #d2d6de;
+	height: 38px;
+}
+
+input[type="button"] {
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 0;
+    color:#fff;
+}
+
+#sendMsg {
+	background-color: #3c8dbc;	
+}
+
+#sendPvtMsg {
+	background-color: #f39c12 ;	
+}
+
+
+
+/* Custom Style */
