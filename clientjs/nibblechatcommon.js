@@ -17,7 +17,7 @@
         //grab the element for which you've to add the the message from server
         var serverMsg = document.getElementById("serverMsg");
         //add the message receIved from server to the element
-        serverMsg.innerHTML = data.msgTxt  + " " + data.dt+"<br/>" + serverMsg.innerHTML ;
+        serverMsg.innerHTML = data.msgTxt  + " " + data.dt+" " + serverMsg.innerHTML ;
     }); 
 
     
@@ -171,8 +171,8 @@
             
             
             var  msg1="<div class=\"talk-bubble tri-right round btm-left\">";
-            msg1+="<div class=\"talktext\"><span>   <p>";
-            msg1+= msg+"</span></p></div></div><br/>";
+            msg1+="<div class=\"talktext\"><span> </span>   <p>";
+            msg1+= msg+"</p></div></div>";
             chatAreaMsg.innerHTML +=msg1;
        }
 
@@ -212,6 +212,6 @@
            msg1+= dt +"</div>";
            msg1+="<div class=\"talktext\"><span></span><p>";
            msg1+= msgTxt +"</p></div>"; 
-           msg1+="</div><br/>";
+           msg1+="</div>";
            chatAreaMsg.innerHTML +=msg1; 
        }
