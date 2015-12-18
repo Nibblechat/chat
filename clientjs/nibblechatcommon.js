@@ -171,8 +171,8 @@
             
             
             var  msg1="<div class=\"talk-bubble tri-right round btm-left\">";
-            msg1+="<div class=\"talktext\">   <p>";
-            msg1+= msg+"</p></div></div><br/>";
+            msg1+="<div class=\"talktext\"><span>   <p>";
+            msg1+= msg+"</span></p></div></div><br/>";
             chatAreaMsg.innerHTML +=msg1;
        }
 
@@ -206,12 +206,12 @@
                userName="Me";
            }
 
-           msg1+="<div class=\"dt dtshadow\">";
-           msg1+= dt +"</div>";
-           msg1+="<div class=\"talktext\">";
-           msg1+= msgTxt +"</div>";
            msg1+="<div class=\"name nameshadow\">";
            msg1+= userName +"</div>";
+           msg1+="<div class=\"dt dtshadow\">";
+           msg1+= dt +"</div>";
+           msg1+="<div class=\"talktext\"><span></span><p>";
+           msg1+= msgTxt +"</p></div>"; 
            msg1+="</div><br/>";
            chatAreaMsg.innerHTML +=msg1; 
        }
