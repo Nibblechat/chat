@@ -425,6 +425,7 @@ body{
     float: right;
     margin-right: 21px;
     background : #1e6791;
+    border-radius: 20px;
 }
 
 #welcomeMsg {
