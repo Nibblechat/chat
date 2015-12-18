@@ -421,11 +421,12 @@ body{
 	background: #3c8dbc;
 }
 #usrLoggedOut{
-	margin-top: 5px;
+	margin-top: 10px;
     float: right;
     margin-right: 21px;
     background : #1e6791;
     border-radius: 20px;
+    font-size: 14px;
 }
 
 #welcomeMsg {
