@@ -421,7 +421,8 @@ body{
 	height: 50px;
 	background: #3c8dbc;
 }
-#usrLoggedOut{
+#usrLoggedOut,
+#usrAdmLoggedOut{
 	margin-top: 10px;
     float: right;
     margin-right: 21px;
@@ -430,7 +431,8 @@ body{
     font-size: 14px;
 }
 
-#welcomeMsg {
+#welcomeMsg,
+#welcomeAdmMsg {
 	color:#fff;
 	float: left;
 	margin-right: 20px;
@@ -496,6 +498,7 @@ option {
 	clear: both;
 	height: 65px;
 }
+
 
 #sendDiv label {
 	vertical-align: top;
@@ -571,5 +574,56 @@ input[type="button"] {
 	font-size: 12px;
 }
 
+/* Admin CSS */
+.admin #chatArea {
+	height: 370px;
+}
+.admin #msgTxt{
+	width: 87%;
+}
+
+.admin #sendDiv {
+	clear: both;
+	height: 110px;
+}
+
+.admin-button {
+	clear: both;
+    padding: 14px;
+    text-align:right;
+}
+
+.admin input[type='button'] {
+	background-color: #3c8dbc;
+}
+
+.left-sidebar {
+	position: relative;
+}
+
+#forcedLoggedOut {
+	position: absolute;
+	bottom: 82px;
+    left: 53px;
+}
+
+.admin #primary {
+	height: 524px;
+}
+
+/* Admin CSS */
+
+.app-name {
+	position: relative;
+	text-align: center;	
+	width: 92%;
+}
+
+.app-name h2{
+	position: absolute;
+	display: inline-block;
+    top: -13px;
+    color: #fff;
+}
 
 /* Custom Style */
