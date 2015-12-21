@@ -550,6 +550,21 @@ input[type="button"] {
 	background-color: #f39c12 ;	
 }
 
+/* Private Msg Class */
+.pvtMsg .talktext p {
+	background-color: #f39c12 ;	
+}
 
+.pvtMsg .talktext p:after{
+	border-color: rgba(0, 0, 0, 0) #f39c12;
+}
+
+.talktext i {
+	background: url('../img/pvt-msg.png') no-repeat;
+	width: 15px;
+	display: inline-block;
+	height: 15px;	
+}
+/* Private Msg Class */
 
 /* Custom Style */

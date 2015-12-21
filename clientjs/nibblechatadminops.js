@@ -44,7 +44,7 @@
      // User Chat message received from sever
         socket.on("pvtMsg", function(data){
              //user who is sending message
-             var msg = ""+data.name +"[ "+data.to +" ]" +" -> "+ "[pvt] " +data.msgTxt+ " " + data.dt;
+             var msg = ""+data.name +"[ "+data.to +" ]" +"  "+ "<i></i> " +data.msgTxt+ " " + data.dt;
    
              publishToChatArea(msg);
          });

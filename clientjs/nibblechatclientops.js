@@ -47,9 +47,9 @@
               var usrName=document.getElementById("usrName").value;
               var msg="";
               if(usrName==data.name){
-                msg = ""+data.name +"[ "+data.to +" ]" +" -> "+ "[pvt] " +data.msgTxt+ " " + data.dt;
+                msg = ""+data.name +"[ "+data.to +" ]" +"  "+ "<i></i> " +data.msgTxt+ " " + data.dt;
               }else {
-                msg = ""+data.name +" -> "+ "[pvt] " +data.msgTxt+ " " + data.dt;
+                msg = ""+data.name +" "+ "<i></i> " +data.msgTxt+ " " + data.dt;
               }
               publishToChatArea(msg);
           });
