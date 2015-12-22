@@ -59,10 +59,10 @@
 
               }else {
                // msg = ""+data.name +" "+ "<i></i> " +data.msgTxt+ " " + data.dt;
-               msg= "<div class=\"talk-bubbleSelf pvtMsg\">";
+               msg= "<div class=\"talk-bubbleSelf pvtMsg remove-arrow\">";
                msg +="<div class=\"name nameshadow\">"+data.name+"</div>";
                msg +="<div class=\"dt dtshadow\">"+data.dt+"</div>";
-          
+     
                msg +="<div class=\"talktext\"><span></span><p><i></i> " +data.msgTxt +"</p></div></div>";
                selfUser="true";
 

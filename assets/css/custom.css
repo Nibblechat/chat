@@ -63,9 +63,7 @@ body{
 	background-color: lightblue;
 }*/
 
-.talk-bubbleSelf {
-    margin: 10px;
-}
+
 
 /*.talk-bubblelogout {
     font-size:small;
@@ -343,8 +341,7 @@ body{
 	width: 36px;
     height: 38px;
     margin-right: 19px;
-    position: relative;
-    top: 14px;
+    float: left;    
 }
 
 .talktext p {
@@ -464,6 +461,7 @@ body{
     padding: 15px; 
     text-transform: capitalize;
     overflow-y:auto;
+    height: 350px;
 }
 
 option {
@@ -653,11 +651,12 @@ input[type="button"] {
 }
 
 .pvtMsg .talktext p {
-	width: 82%;
+	width: 81%;
+	margin: 0;
 }
 .pvtMsg .right-user {
-	margin-left: 20px;
-    margin-right: 0;
+	margin-right: 0;
+    float: right;
 }
 
 .pvtMsg .talktext p:before {
@@ -672,6 +671,31 @@ input[type="button"] {
     width: 0;
     z-index: 1;
     right: -15px;
+}
+
+.pvtMsg.remove-arrow .talktext p:before {
+	content:"";
+	display: none;
+}
+.talktext p {
+	margin: 0;
+}
+
+.pvtMsg.remove-arrow  .talktext p {
+	width: 89%;
+} 
+
+.pvtMsg.remove-arrow .dt {
+	float: right;
+}
+
+.talk-bubble,
+.talk-bubblelogin,
+.talk-bubbleSelf,
+.talk-bubble,
+.talk-bubblelogout {
+	margin:10px 10px 17px 10px;
+
 }
 
 /* Custom Style */
