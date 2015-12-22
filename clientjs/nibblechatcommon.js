@@ -17,7 +17,10 @@
         //grab the element for which you've to add the the message from server
         var serverMsg = document.getElementById("serverMsg");
         //add the message receIved from server to the element
-        serverMsg.innerHTML = data.msgTxt  + " " + data.dt+" " + serverMsg.innerHTML ;
+        //serverMsg.innerHTML = data.msgTxt  + " " + data.dt+" " + serverMsg.innerHTML ;
+        var svrmsg="<div class=\"serverMsg\"><div class=\"dateTime\">" +data.dt  + "</div>";
+            svrmsg+="<div class=\"msg\">"+data.msgTxt+"</div></div>";
+            serverMsg.innerHTML = svrmsg + serverMsg.innerHTML;
     }); 
 
     
@@ -34,7 +37,7 @@
            publishMsgToChatArea(data.name,data.msg,data.dt,selfUser,"LOGIN");  
           
         	   
-          //publishToChatArea(msg);
+         // publishToChatArea(msg);
          
          });     
 
@@ -166,14 +169,7 @@
 
             //grab the element for which you've to add the the message from server
             var chatAreaMsg = document.getElementById("chatArea");
-            //add the message recieved from server to the element
-            //chatAreaMsg.innerHTML +=msg;
-            
-            
-            var  msg1="<div class=\"talk-bubble tri-right round btm-left\">";
-            msg1+="<div class=\"talktext\"><span> </span>   <p>";
-            msg1+= msg+"</p></div></div>";
-            chatAreaMsg.innerHTML +=msg1;
+            chatAreaMsg.innerHTML +=msg;
        }
 
        

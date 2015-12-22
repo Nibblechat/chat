@@ -46,11 +46,31 @@
               //user who is sending message
               var usrName=document.getElementById("usrName").value;
               var msg="";
+              var selfUser="false";
+              var msgType="pvtMsg";
+
               if(usrName==data.name){
-                msg = ""+data.name +"[ "+data.to +" ]" +"  "+ "<i></i> " +data.msgTxt+ " " + data.dt;
+               // msg = ""+data.name +"[ "+data.to +" ]" +"  "+ "<i></i> " +data.msgTxt+ " " + data.dt;
+                   msg= "<div class=\"talk-bubbleSelf pvtMsg\">";
+               msg +="<div class=\"name nameshadow left-name\">"+data.name+"</div>";               
+               msg +="<div class=\"dt dtshadow\">"+data.dt+"</div>";
+               msg +="<div class=\"name nameshadow right-name\">Me</div>";
+               msg +="<div class=\"talktext\"><span></span><p><i></i> " +data.msgTxt +"</p><span class=\"right-user\"></span></div></div>";
+
               }else {
-                msg = ""+data.name +" "+ "<i></i> " +data.msgTxt+ " " + data.dt;
+               // msg = ""+data.name +" "+ "<i></i> " +data.msgTxt+ " " + data.dt;
+               msg= "<div class=\"talk-bubbleSelf pvtMsg\">";
+               msg +="<div class=\"name nameshadow\">"+data.name+"</div>";
+               msg +="<div class=\"dt dtshadow\">"+data.dt+"</div>";
+          
+               msg +="<div class=\"talktext\"><span></span><p><i></i> " +data.msgTxt +"</p></div></div>";
+               selfUser="true";
+
               }
+
+
+              //publishMsgToChatArea(data.name,data.msgTxt,data.name,selfUser,msgType);
+
               publishToChatArea(msg);
           });
 
