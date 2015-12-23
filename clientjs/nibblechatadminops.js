@@ -44,7 +44,12 @@
      // User Chat message received from sever
         socket.on("pvtMsg", function(data){
              //user who is sending message
-             var msg = ""+data.name +"[ "+data.to +" ]" +"  "+ "<i></i> " +data.msgTxt+ " " + data.dt;
+             //var msg = ""+data.name +"[ "+data.to +" ]" +"  "+ "<i></i> " +data.msgTxt+ " " + data.dt;
+             msg= "<div class=\"talk-bubbleSelf pvtMsg adminMsg\">";
+             msg +="<div class=\"name nameshadow left-name\">"+data.name+"</div>";               
+             msg +="<div class=\"dt dtshadow\">"+data.dt+"</div>";
+             msg +="<div class=\"name nameshadow right-name\">"+data.to+"</div>";
+             msg +="<div class=\"talktext\"><span></span><p> " +data.msgTxt +"</p><span class=\"right-user\"></span></div></div>";
    
              publishToChatArea(msg);
          });
