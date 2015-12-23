@@ -170,6 +170,7 @@
             //grab the element for which you've to add the the message from server
             var chatAreaMsg = document.getElementById("chatArea");
             chatAreaMsg.innerHTML +=msg;
+            chatAreaMsg.scrollTop = chatAreaMsg.scrollHeight;
        }
 
        
@@ -209,5 +210,6 @@
            msg1+="<div class=\"talktext\"><span></span><p>";
            msg1+= msgTxt +"</p></div>"; 
            msg1+="</div>";
-           chatAreaMsg.innerHTML +=msg1; 
+           chatAreaMsg.innerHTML +=msg1;            
+           chatArea.scrollTop = chatArea.scrollHeight;
        }

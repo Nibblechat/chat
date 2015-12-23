@@ -454,7 +454,7 @@ body{
 }
 
 #usersList select {
-	border: none;
+	border: 0;
     background-color: transparent;
     width: 100%;
     color: #b8c7ce;
