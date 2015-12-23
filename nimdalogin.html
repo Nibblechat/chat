@@ -2,6 +2,8 @@
 
 <head>
     <title>Nibble Chat - Admin Login</title>
+    <link href='https:/;/fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="/assets/css/custom.css" rel="stylesheet" type="text/css" />
     <script src="/socket.io/socket.io.js"></script>
     <script src="/clientjs/nibblechatglobalsettings.js"></script>
     <script src="/clientjs/nibblechatutilities.js"></script>       
@@ -9,12 +11,15 @@
  
 </head>
 
-<body>
+<body class="login adminlogin">
+    <div class="loginContainer">
+    <h2 class="heading">Nibble Chat</h2>
      <form name="adminLogin" id="adminLogin" method="post" action="/nimda.html" onSubmit="javascript:loginAdmUsr();">
-      Name : <input type="text" name="usrAdmName" id="usrAdmName" value="" length="10"/>
-      <input type="submit" name="usrAdmLoggedin" id="usrAdmLoggedin" value="Sign In"/>
+      <label>Name</label> <input type="text" name="usrAdmName" id="usrAdmName" value="" length="10"/>
+      <input type="submit" name="usrAdmLoggedin" id="usrAdmLoggedin" value="Sign in"/>
       <input type="button" name="usrAdmLoggedOut" id="usrAdmLoggedOut" value="Logout" disabled="true" onClick="javascript:logoutAdmUsr();"/>
      </form>
+    </div>
 </body>
 
 </html>

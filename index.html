@@ -2,6 +2,8 @@
 
 <head>
     <title>Nibble Chat - Login</title>
+    <link href='https:/;/fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="/assets/css/custom.css" rel="stylesheet" type="text/css" />
     <script src="/socket.io/socket.io.js"></script>
     <script src="/clientjs/nibblechatglobalsettings.js"></script>
     <script src="/clientjs/nibblechatutilities.js"></script>       
@@ -9,11 +11,13 @@
  
 </head>
 
-<body>
-     <form name="chatLogin" id="chatLogin" method="post" action="/nibblechat.html" onSubmit="javascript:loginUsr();">
-      Name : <input type="text" name="usrName" id="usrName" value="" length="10"/>
-      <input type="submit" name="usLoggedin" id="usrLoggedin" value="Sign In"/>
-     </form>
+<body class="login">
+	<div class="loginContainer">
+		<h2 class="heading">Nibble Chat</h2>
+		<form name="chatLogin" id="chatLogin" method="post" action="/nibblechat.html" onSubmit="javascript:loginUsr();">
+		 <label>Name</label> <input type="text" name="usrName" id="usrName" value="" length="10"/>
+		 <input type="submit" name="usLoggedin" id="usrLoggedin" value="Sign in"/>
+		</form>	
+	</div>
 </body>
-
 </html>

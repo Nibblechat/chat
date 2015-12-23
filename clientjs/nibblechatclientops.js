@@ -52,7 +52,7 @@
               if(usrName==data.name){
                // msg = ""+data.name +"[ "+data.to +" ]" +"  "+ "<i></i> " +data.msgTxt+ " " + data.dt;
                    msg= "<div class=\"talk-bubbleSelf pvtMsg\">";
-               msg +="<div class=\"name nameshadow left-name\">"+data.name+"</div>";               
+               msg +="<div class=\"name nameshadow left-name\">"+data.to+"</div>";               
                msg +="<div class=\"dt dtshadow\">"+data.dt+"</div>";
                msg +="<div class=\"name nameshadow right-name\">Me</div>";
                msg +="<div class=\"talktext\"><span></span><p><i></i> " +data.msgTxt +"</p><span class=\"right-user\"></span></div></div>";
