@@ -356,13 +356,13 @@ body{
 }
 
 .name {
-	font-size: 14px;
+	font-size: 13px;
 }
 
 .talktext p:after{
 	content: "";
     position: absolute;
-    top: 5px;
+    top: 4px;
     left: -14px;
     border-style: solid;
     border-width: 10px 15px 10px 0;
@@ -530,7 +530,8 @@ option.inactive {
 	box-shadow: none;
 	border-radius: none;
 	border: 1px solid #d2d6de;
-	height: 38px;
+	height: 33px;
+    overflow: hidden;
 }
 
 input[type="button"],
@@ -540,7 +541,7 @@ input[type="submit"]  {
 	border-radius: none;
 	cursor: pointer;
     display: inline-block;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.42857;
     margin-bottom: 0;
@@ -689,7 +690,7 @@ input[type="submit"]  {
 }
 .talktext p {
 	margin: 0;
-	font-size: 14px;
+	font-size: 13px;
 	margin-top: 4px;
 }
 
