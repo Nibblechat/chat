@@ -42,10 +42,11 @@ body{
 #footer {
     clear: both;
     background: #0D1B21;
-    padding: 15px;
+    padding: 1px;
     color: #fff;
     font-size: 14px;
     color:#BFBFBF;
+    text-align: center;
 }
 
 /* CSS talk bubble */
@@ -535,29 +536,35 @@ option.inactive {
 }
 
 input[type="button"],
+input[type="reset"],
 input[type="submit"]  {
 	appearance: none;
 	box-shadow: none;
 	border-radius: none;
 	cursor: pointer;
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 1.42857;
+    line-height: 2.0;
     margin-bottom: 0;
-    padding: 6px 12px;
+    padding: 4px 8px;
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
     border: 0;
     color:#fff;
+    
+;
 }
 
-#sendMsg {
+#sendMsg,
+#sendEmail {
 	background-color: #3c8dbc;	
 }
 
 #sendPvtMsg,
+#usrRegister,
+#usrRegisterReset,
 #admPvtMsg {
 	background-color: #f39c12 ;	
 }
@@ -569,6 +576,7 @@ input[type="submit"]  {
 
 .pvtMsg .talktext p:after{
 	border-color: rgba(0, 0, 0, 0) #f39c12;
+	display: none;
 }
 
 .talktext i {
@@ -588,7 +596,7 @@ input[type="submit"]  {
 	height: 370px;
 }
 .admin #msgTxt{
-	width: 87%;
+	width: 50%;
 }
 
 .admin #sendDiv {
@@ -719,7 +727,7 @@ input[type="submit"]  {
 }
 
 .loginContainer {
-	width: 30%;
+	width: 35%;
 	margin: 100px auto;
 	padding: 60px;
 	text-align: center;
@@ -732,25 +740,34 @@ input[type="submit"]  {
 }
 
 .loginContainer input[type="text"] {
-	width: 60%;
-    height: 40px;
+	width: 45%;
+    height: 25px;
     border-radius: 4px;
     border: 1px solid #c3c5c5;
     padding: 5px;
+    line-height:25px;
+}
+
+.loginContainer input[type="password"] {
+	width: 45%;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #c3c5c5;
+    padding: 5px;
+    line-height:25px;
 }
 
 .loginContainer label {
 	color:#626565;
+	line-height:35px;
+	width: 100px;
 }
 
 .loginContainer input[type="submit"]{
 	background: #3c8dbc;
 	border-radius: 4px;
 }
-.adminlogin .loginContainer {
-	width: 43%;
-	position: relative;
-}
+
 .adminlogin #usrAdmLoggedOut {
 	float: none;
 	margin: 0;
@@ -765,4 +782,81 @@ input[type="submit"]  {
     color:#fff;
 }
 
-/* Login Page */
+.adminlogin .loginContainer {
+	width: 35%;
+	position: relative;
+}
+/* registeration Page */
+
+.registration {
+	background-color: #f6f8f8;
+}
+
+.RegistrationContainer {
+	width: 35%;
+	margin: 60px auto;
+	padding: 60px;
+	background: #fff;
+	border-top: 54px solid #3c8dbc;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 13px 16px -7px rgba(0,0,0,0.35);
+    -moz-box-shadow: 1px 13px 16px -7px rgba(0,0,0,0.35);
+    box-shadow: 1px 13px 16px -7px rgba(0,0,0,0.35);
+}
+
+.RegistrationContainer input[type="text"] {
+	width: 45%;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #c3c5c5;
+    padding: 5px;
+    line-height:25px;
+}
+
+.RegistrationContainer input[type="password"] {
+	width: 45%;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #c3c5c5;
+    padding: 5px;
+    line-height:25px;
+}
+.RegisterationHeading {
+	margin-top: -97px;
+    margin-bottom: 50px;
+    color:#fff;
+     text-align: center;
+}
+
+.RegistrationContainer label {
+	color:#626565;
+	font-size: 14px;
+	display: inline-block;
+	width: 100px;
+    line-height:35px;
+}
+
+.RegistrationContainer input[type="submit"]{
+	background: #3c8dbc;
+	border-radius: 4px;
+}
+
+.RegistrationContainer input[type="button"]{
+	background: #3c8dbc;
+	border-radius: 4px;
+}
+
+.RegistrationButtonContainer{
+	width:250px;
+	margin:auto;
+}
+
+.RegistrationContainer input[type="reset"]{
+	background: #3c8dbc;
+	border-radius: 4px;
+}
+
+.RegistrationContainer {
+	width: 30%;
+	position: relative;
+}

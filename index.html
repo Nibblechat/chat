@@ -14,9 +14,14 @@
 <body class="login">
 	<div class="loginContainer">
 		<h2 class="heading">Nibble Chat</h2>
-		<form name="chatLogin" id="chatLogin" method="post" action="/nibblechat.html" onSubmit="javascript:loginUsr();">
-		 <label>Name</label> <input type="text" name="usrName" id="usrName" value="" length="10"/>
+		<form name="chatLogin" id="chatLogin" method="POST" action="/nibblechat.html" onSubmit="javascript:loginUsr();">
+		 <label>Username</label> <input type="text" name="usrName" id="usrName" value="" length="10"/>
+		 <br/>
+		 <label>Password </label> <input type="password" name="usrPwd" id="usrPwd" value="" length="10"/>   
+		 <br/>
 		 <input type="submit" name="usLoggedin" id="usrLoggedin" value="Sign in"/>
+		 <input type="button" name="usrRegister" id="usrRegister" value="Register" onClick="javascript:registerUsr();"/>
+		 
 		</form>	
 	</div>
 </body>

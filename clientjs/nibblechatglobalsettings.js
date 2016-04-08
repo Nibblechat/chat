@@ -18,5 +18,8 @@
     var chatUrl=baseURL+"/nibblechat/";
     var adminCK="nibbleadmin";
     var chatCK="nibblechat";
-    
+   
     var socket = io.connect(baseURL);
+    
+   // window.onbeforeunload = logoutUsr;
+  //  window.unload = logoutUsr;

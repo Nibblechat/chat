@@ -1,0 +1,15 @@
+{
+    "usrName": "rahul",
+    "fName": "Rahul",
+    "lName": "Gupta",
+    "dob": "08/27/1973",
+    "addr1": "Sapient NITRO",
+    "addr2": "Oxygen Boulevard",
+    "city": "NOIDA",
+    "state": "UP",
+    "country": "IN",
+    "pincode": "201301",
+    "mobile": "9891197569",
+    "email": "rgupta89@sapient.com",
+    "password": "rahul"
+}

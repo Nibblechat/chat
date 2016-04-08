@@ -6,7 +6,19 @@
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
     <script src="/socket.io/socket.io.js"></script>
     <script src="/clientjs/nibblechatglobalsettings.js"></script>  
+<script type="text/javascript">
+/* window.addEventListener("beforeunload", function (e) {
 
+  var confirmationMessage = "Are you sure you want to leave this page without placing the order ?";
+  (e || window.event).returnValue = confirmationMessage;
+  return confirmationMessage;
+
+}); */
+
+//window.addEventListener("beforeunload",logoutUsr);
+
+
+</script>
 </head>
 
 <body>
@@ -31,7 +43,8 @@
 			<div id="sendDiv">			
 			  <label>Message : </label> <textarea name="msgTxt" id="msgTxt" rows="1" cols="50"></textarea>
 			  <input type="button" name="sendMsg" id="sendMsg" value="Send" onClick="javascript:sendUsrMsg();"/>
-			  <input type="button" name="sendPvtMsg" id="sendPvtMsg" value="Send Pvt Msg" onClick="javascript:sendPvtMsg();"/>
+			  <input type="button" name="sendPvtMsg" id="sendPvtMsg" value="Pvt Msg" onClick="javascript:sendPvtMsg();"/>
+			  <input type="button" name="sendEmail" id="sendEmail" value="Email" onClick="javascript:sendEmail();"/>
 			  <input type="hidden" name="usrName" id="usrName" value="" length="10"/>
 			  <input type="hidden" name="pageType" id="pageType" value="chat" length="10"/>			    
 			</div>	
@@ -51,9 +64,7 @@
     </div>
 </div>
 
-
-
-    
+ 
     <script src="/clientjs/nibblechatcommon.js"></script>
     <script src="/clientjs/nibblechatutilities.js"></script>  
     <script src="/clientjs/nibblechatclientops.js"></script>     

@@ -1,0 +1,16 @@
+{
+        "usrName": "admin",
+        "fName": "Administrator",
+        "lName": "",
+        "gender": "male",
+        "dob": "dondsd",
+        "addr1": "addr1",
+        "addr2": "a",
+        "city": "city",
+        "state": "state",
+        "country": "country",
+        "pincode": "pincode",
+        "mobile": "89899",
+        "email": "rgupta89@sapient.com",
+        "password": "nimda"
+    }

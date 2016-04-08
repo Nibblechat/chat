@@ -26,7 +26,7 @@
          var uaname = readCKValue(adminCK,1);
  
          document.getElementById("usrAdmName").value=uaname;
-         document.title+= " - "+ uaname;
+         //document.title+= " - "+ uaname;
          // Welcome Message for User from sever
          
         socket.on("welcomeAdm", function (data) {
@@ -34,21 +34,34 @@
             var welcomeAdmMsg = document.getElementById("welcomeAdmMsg");
             //add the message received from server to the element
             welcomeAdmMsg.innerHTML = data.msg;
-            populateUserList(data.users);
+            populateUserList(data.userdetails);
+            var displayname =getDisplayName(data.name, data.fname, data.lname);
+            document.title+= " - "+ displayname;
 
         });
-        
-       
      }
         
+     
+     // in case admin user refreshes the page, then invoke logout process
+     
+     if(adminCKValue!=null && document.getElementById("usrAdmName").value==""){
+    	 emitLogoutMsg(readCKValue(adminCKValue,1));
+    	 eraseCK(adminCKValue);
+    	 window.location =adminUrl;
+     }
+     
+     
      // User Chat message received from sever
         socket.on("pvtMsg", function(data){
              //user who is sending message
              //var msg = ""+data.name +"[ "+data.to +" ]" +"  "+ "<i></i> " +data.msgTxt+ " " + data.dt;
+            var todisplayName =getDisplayName(data.to, data.tofname, data.tolname);
+            var fromdisplayName =getDisplayName(data.name, data.fname, data.lname);
+            
              msg= "<div class=\"talk-bubbleSelf pvtMsg adminMsg\">";
-             msg +="<div class=\"name nameshadow left-name\">"+data.name+"</div>";               
+             msg +="<div class=\"name nameshadow left-name\">"+fromdisplayName+"</div>";               
              msg +="<div class=\"dt dtshadow\">"+data.dt+"</div>";
-             msg +="<div class=\"name nameshadow right-name\">"+data.to+"</div>";
+             msg +="<div class=\"name nameshadow right-name\">"+todisplayName+"</div>";
              msg +="<div class=\"talktext\"><span></span><p> " +data.msgTxt +"</p><span class=\"right-user\"></span></div></div>";
    
              publishToChatArea(msg);
@@ -134,5 +147,5 @@
 
        
           function sendAdmPvtMsg(){
-             sendMsgTo(adminCK,"msgTxt","pvtMsg","usrAdmName");
+             sendMsgTo(adminCK,"msgTxt","pvtMsg","usrAdmName","ADMIN");
           }

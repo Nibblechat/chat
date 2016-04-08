@@ -28,18 +28,15 @@
         <div id="chatArea"> </div>
         
         <div id="sendDiv">
-          <form name="admForm" id="admForm">
+          <form name="admForm" id="admForm" method="GET">
             <input type="hidden" name="usrAdmName" id="usrAdmName" value="" />
            <input type="hidden" name="pageType" id="pageType" value="admin" length="10"/>
 
            <label>Message : </label>
            <textarea name="msgTxt" id="msgTxt" rows="2" cols="50"></textarea> 
-           <div class="admin-button">
              <input type="button" name="sendAdmMsg" id="sendAdmMsg" value="Broadcast" onClick="javascript:broadcastMsg();"/>
-             <input type="button" name="admPvtMsg" id="admPvtMsg" value="Send message to User" onClick="javascript:sendAdmPvtMsg();"/>
-
-           </div>
-                      
+             <input type="button" name="admPvtMsg" id="admPvtMsg" value="Send Msg to User" onClick="javascript:sendAdmPvtMsg();"/>
+			  <input type="button" name="sendAdmEmail" id="sendAdmEmail" value="Email" onClick="javascript:sendEmail();"/>                      
           </form>
         </div>
         
@@ -53,9 +50,6 @@
     </div>   
     </div>   
     
-   <script type="text/javascript">
-
-   </script>
     <script src="/clientjs/nibblechatcommon.js"></script>
     <script src="/clientjs/nibblechatutilities.js"></script>   
     <script src="/clientjs/nibblechatadminops.js"></script>
